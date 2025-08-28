@@ -1,0 +1,16 @@
+from flask import Flask,render_template, request, jsonify
+
+#Inializacion de mi flamework flask
+app = Flask(__name__)
+
+#rutas
+@app.route('/')
+
+
+def index():
+    return render_template('index.html')
+
+
+#Ejecutar mi servidor
+if __name__=='__main__':
+    app.run(debug=True)
